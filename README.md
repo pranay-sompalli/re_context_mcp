@@ -87,7 +87,7 @@ Specialized for vulnerability research, exploitability assessments, and patch va
 - **Candidate Functions**: Functions on the vulnerability path.
 - **Data-flow Facts**: End-to-end taint traces from untrusted source to vulnerable sink.
 
-Reference file: [templates/vulnerabilities.md](file:///Users/pranaysompalli/Documents/context-manager-mcp/templates/vulnerabilities.md)
+Reference file: [templates/vulnerabilities.md](file://~/context-manager-mcp/templates/vulnerabilities.md)
 
 ### 2. Semantic Recovery (`semantic_recovery`)
 Specialized for decompilation, binary analysis, and reverse engineering:
@@ -99,7 +99,7 @@ Specialized for decompilation, binary analysis, and reverse engineering:
 - **Data-flow & Control-flow Facts**: Sequential processing and state-machine transitions.
 - **Struct / Type Definitions**: Reconstructed C structs, offsets, and typedefs.
 
-Reference file: [templates/semantic_recovery.md](file:///Users/pranaysompalli/Documents/context-manager-mcp/templates/semantic_recovery.md)
+Reference file: [templates/semantic_recovery.md](file://~/context-manager-mcp/templates/semantic_recovery.md)
 
 ### 3. Call Graph & Attention Topology (`call_graph`)
 Specialized for subsystem mapping, priority triaging, and bottom-up semantic propagation:
@@ -107,7 +107,7 @@ Specialized for subsystem mapping, priority triaging, and bottom-up semantic pro
 - **Bottom-Up Callee-to-Caller Semantic Flows**: Reconstructed control and data paths starting at ground-truth leaves (APIs, syscalls, crypto routines) and bubbling up to parent callers.
 - **Call Graph Edges**: Directional caller-to-callee dependencies (`caller -> callee`).
 
-Reference file: [templates/call_graph.md](file:///Users/pranaysompalli/Documents/context-manager-mcp/templates/call_graph.md)
+Reference file: [templates/call_graph.md](file://~/context-manager-mcp/templates/call_graph.md)
 
 ---
 
@@ -156,7 +156,7 @@ Add to your project's `.agents/mcp_config.json` or global `~/.gemini/config/mcp_
 {
   "mcpServers": {
     "re_context": {
-      "command": "/Users/pranaysompalli/Documents/context-manager-mcp/run.sh",
+      "command": "~/Documents/context-manager-mcp/run.sh",
       "args": []
     }
   }
@@ -169,7 +169,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "re_context": {
-      "command": "/Users/pranaysompalli/Documents/context-manager-mcp/run.sh",
+      "command": "~/context-manager-mcp/run.sh",
       "args": []
     }
   }
@@ -182,7 +182,7 @@ In your plugin's `.mcp.json`:
 {
   "mcpServers": {
     "re_context": {
-      "command": "/Users/pranaysompalli/Documents/context-manager-mcp/run.sh",
+      "command": "~/context-manager-mcp/run.sh",
       "args": []
     }
   }
@@ -193,7 +193,7 @@ In your plugin's `.mcp.json`:
 In Cursor Settings > Features > MCP, add a new server with:
 - **Name**: `re_context`
 - **Type**: `command`
-- **Command**: `/Users/pranaysompalli/Documents/context-manager-mcp/run.sh`
+- **Command**: `~/context-manager-mcp/run.sh`
 
 ---
 

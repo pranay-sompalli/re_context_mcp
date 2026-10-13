@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "re_context": {
+      "command": "/Users/pranaysompalli/Documents/context-manager-mcp/run.sh",
+      "args": []
+    },
+    "ghidra_mcp": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "bridge_mcp_ghidra",
+        "--transport",
+        "stdio",
+        "--no-lazy"
+      ]
+    }
+  }
+}

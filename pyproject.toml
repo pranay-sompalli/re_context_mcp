@@ -1,0 +1,22 @@
+[project]
+name = "re-context-manager-mcp"
+version = "0.1.0"
+description = "Universal Semantic & Epistemic Context Manager MCP Server"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "z3-solver>=4.12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+re-context-mcp = "context_server:mcp.run"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
